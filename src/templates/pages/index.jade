@@ -1,0 +1,102 @@
+extends /layouts/main
+
+block content
+  a#menu-open.btn.btn-dark.btn-lg.toggle(href='#')
+    i.fa.fa-list-alt
+  nav#sidebar
+    ul.sidebar-nav
+      a#menu-close.btn.btn-dark.btn-lg.pull-right.toggle(href='#')
+        i.fa.fa-times
+      li.sidebar-brand
+        a(href='#top') CShuer
+      li
+        a(href='#about') About
+      li
+        a(href='#portfolio') Portfolio
+      li
+        a(href='#contact') Contact
+
+  header#top.header
+    .text-vertical-center
+      h1 CShuer
+      #subheadline
+        h3
+          br
+          | 
+      br
+      a.btn.btn-dark.btn-lg(href='#about') Find Out More
+
+  section#about.about
+    .container
+      .row
+        .col-lg-12.text-center
+          h2 
+        .col-lg-12
+          p(style="margin:0 auto; max-width:900px") 
+              
+
+  aside.skills
+    .container
+      .row.text-center
+        .col-lg-10.col-lg-offset-1
+          h2(style="margin-top:40px") Services
+          .row
+            .col-md-4.col-sm-6
+              .skill
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-html5.fa-stack-1x.icon
+                  h4
+                    strong 
+                  p 
+            .col-md-4.col-sm-6
+              .skill2
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-code.fa-stack-1x.icon
+                  h4
+                    strong 
+                  p 
+            .col-md-4.col-sm-6
+              .skill
+                .service-item
+                  span.fa-stack.fa-4x
+                    i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-mobile.fa-stack-1x.icon
+                  h4
+                    strong 
+                  p
+
+  section#portfolio.portfolio
+    .container
+      .row
+        .col-lg-10.col-lg-offset-1.text-center
+          h2 Portfolio
+          .row
+            .col-md-6
+              .portfolio-item
+              hr.mobile-rule
+            .col-md-6
+              .portfolio-item
+
+  footer
+    .container#contact
+      .row
+        .col-lg-10.col-lg-offset-1.text-center
+          h3 Contact Me!
+          p 
+            |I'm always interested in hearing about new opportunities and connecting with others,
+            br
+            |so feel free to drop me a line via Email or follow me!
+          ul.list-inline
+            li
+              a(href='mailto:Flack.AP@gmail.com' target="blank")
+                i.fa.fa-envelope.fa-fw.fa-3x
+            li
+              a(href='http://twitter.com/flackap' target="blank")
+                i.fa.fa-twitter.fa-fw.fa-3x
+          hr.small
+          p.text-muted(style="font-size:12px") Copyright © Corey Schuerman 2014
+          p.text-muted(style="font-size:12px") Built by <a href="http://FlackAP.com">Andy Flack</a>
