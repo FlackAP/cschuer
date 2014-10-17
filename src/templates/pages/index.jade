@@ -1,102 +1,98 @@
-extends /layouts/main
+extends ../layouts/main
 
 block content
-  a#menu-open.btn.btn-dark.btn-lg.toggle(href='#')
-    i.fa.fa-list-alt
-  nav#sidebar
-    ul.sidebar-nav
-      a#menu-close.btn.btn-dark.btn-lg.pull-right.toggle(href='#')
-        i.fa.fa-times
-      li.sidebar-brand
-        a(href='#top') CShuer
-      li
-        a(href='#about') About
-      li
-        a(href='#portfolio') Portfolio
-      li
-        a(href='#contact') Contact
-
-  header#top.header
-    .text-vertical-center
-      h1 CShuer
-      #subheadline
-        h3
-          br
-          | 
-      br
-      a.btn.btn-dark.btn-lg(href='#about') Find Out More
-
-  section#about.about
-    .container
-      .row
-        .col-lg-12.text-center
-          h2 
-        .col-lg-12
-          p(style="margin:0 auto; max-width:900px") 
-              
-
-  aside.skills
-    .container
-      .row.text-center
-        .col-lg-10.col-lg-offset-1
-          h2(style="margin-top:40px") Services
-          .row
-            .col-md-4.col-sm-6
-              .skill
-                .service-item
-                  span.fa-stack.fa-4x
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-html5.fa-stack-1x.icon
-                  h4
-                    strong 
-                  p 
-            .col-md-4.col-sm-6
-              .skill2
-                .service-item
-                  span.fa-stack.fa-4x
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-code.fa-stack-1x.icon
-                  h4
-                    strong 
-                  p 
-            .col-md-4.col-sm-6
-              .skill
-                .service-item
-                  span.fa-stack.fa-4x
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-mobile.fa-stack-1x.icon
-                  h4
-                    strong 
-                  p
-
-  section#portfolio.portfolio
-    .container
-      .row
-        .col-lg-10.col-lg-offset-1.text-center
-          h2 Portfolio
-          .row
-            .col-md-6
-              .portfolio-item
-              hr.mobile-rule
-            .col-md-6
-              .portfolio-item
-
-  footer
-    .container#contact
-      .row
-        .col-lg-10.col-lg-offset-1.text-center
-          h3 Contact Me!
-          p 
-            |I'm always interested in hearing about new opportunities and connecting with others,
-            br
-            |so feel free to drop me a line via Email or follow me!
-          ul.list-inline
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    //
+       Navigation 
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top')
+            i.fa.fa-play-circle
+            span.light Start
+            | Bootstrap
+        //
+           Collect the nav links, forms, and other content for toggling 
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav
+            //
+               Hidden li included to remove active class from about link when scrolled up past about section 
+            li.hidden
+              a(href='#page-top')
             li
-              a(href='mailto:Flack.AP@gmail.com' target="blank")
-                i.fa.fa-envelope.fa-fw.fa-3x
+              a.page-scroll(href='#about') About
             li
-              a(href='http://twitter.com/flackap' target="blank")
-                i.fa.fa-twitter.fa-fw.fa-3x
-          hr.small
-          p.text-muted(style="font-size:12px") Copyright © Corey Schuerman 2014
-          p.text-muted(style="font-size:12px") Built by <a href="http://FlackAP.com">Andy Flack</a>
+              a.page-scroll(href='#portfolio') Portfolio
+            li
+              a.page-scroll(href='#contact') Contact
+        //
+           /.navbar-collapse 
+      //
+         /.container 
+    //
+       Intro Header 
+    header.intro
+        .container(style="margin-top:25%")
+          .row
+            .col-md-8.col-md-offset-2
+              h1.brand-heading Grayscale
+              p.intro-text
+                | A free, responsive, one page Bootstrap theme.
+                br
+                | Created by Start Bootstrap.
+              a.btn.btn-circle.page-scroll(href='#about')
+                i.fa.fa-angle-double-down.animated
+    //
+       About Section 
+    section#about.container.content-section.text-center
+      .row
+        .col-lg-8.col-lg-offset-2
+          h2 About Grayscale
+          p
+            | Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on
+            a(href='http://startbootstrap.com/template-overviews/grayscale/') the preview page
+            | . The theme is open source, and you can use it for any purpose, personal or commercial.
+          p
+            | This theme features stock photos by
+            a(href='http://gratisography.com/') Gratisography
+            | along with a custom Google Maps skin courtesy of
+            a(href='http://snazzymaps.com/') Snazzy Maps
+            | .
+          p
+            | Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.
+    //
+       Download Section 
+    section#portfolio.content-section.text-center
+      .download-section
+        .container
+          .col-lg-8.col-lg-offset-2
+            h2 Cool Portfolio, Bro
+       Contact Section 
+    section#contact.container.content-section.text-center
+      .row
+        .col-lg-8.col-lg-offset-2
+          h2 Contact CSchuer
+          p
+            | Hit me up on the low
+          p
+            a(href='mailto:feedback@startbootstrap.com') feedback@startbootstrap.com
+          ul.list-inline.banner-social-buttons
+            li
+              a.btn.btn-default.btn-lg(href='https://twitter.com/')
+                i.fa.fa-twitter.fa-fw
+                span.network-name Twitter
+            li
+              a.btn.btn-default.btn-lg(href='https://linkedin.com')
+                i.fa.fa-linkedin.fa-fw
+                span.network-name Linkedin
+
+    //
+       Map Section 
+    #map
+    //
+       Footer 
+    footer
+      .container.text-center
+        p Copyright © CSchuer 2014
