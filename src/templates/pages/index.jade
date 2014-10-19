@@ -2,19 +2,13 @@ extends ../layouts/main
 
 block content
   body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
-    //
-       Navigation 
     nav.navbar.navbar-custom.navbar-fixed-top(role='navigation' style="max-height:90px")
       .container
         .navbar-header(style="width:20%" )
           a.navbar-brand.page-scroll(href='#page-top')
             span.light: img(src="images/Logo2.gif" style="min-width:100px; width:20%; position:relative; top:-10px")
-        //
-           Collect the nav links, forms, and other content for toggling 
         .collapse.navbar-collapse.navbar-right.navbar-main-collapse
           ul.nav.navbar-nav
-            //
-               Hidden li included to remove active class from about link when scrolled up past about section 
             li.hidden
               a(href='#page-top')
             li
@@ -23,12 +17,7 @@ block content
               a.page-scroll(href='#portfolio') Portfolio
             li
               a.page-scroll(href='#contact') Contact
-        //
-           /.navbar-collapse 
-      //
-         /.container 
-    //
-       Intro Header 
+
     header.intro
         .container(style="margin-top:25%")
           .row
@@ -39,7 +28,6 @@ block content
               a.btn.btn-circle.page-scroll(href='#about')
                 i.fa.fa-hand-o-down.animated
 
-    //-About Section 
     section#about.container.content-section.text-center
       .row
         .col-lg-8.col-lg-offset-2
@@ -47,14 +35,12 @@ block content
           p
             | To create, refine, and execute marketing strategies through promotional initiatives across multiple channels; including corporate communications through trade shows & events, social, print, & digital media, and direct face-to-face meetings, leading the company to capitalize on revenue opportunities and increase customer satisfaction.
 
-    //- Download Section 
     section#portfolio.content-section.text-center
       .download-section
         .container
           .col-lg-8.col-lg-offset-2
             h2 Cool Portfolio, Bro
-
-       //- Contact Section 
+ 
     section#contact.container.content-section.text-center
       .row
         .col-lg-8.col-lg-offset-2
