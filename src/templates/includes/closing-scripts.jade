@@ -2,10 +2,19 @@
 // bower:js
 script(src='bower_components/jquery/dist/jquery.min.js')
 script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
-script(src='scripts/jquery.easing.min.js')
+script(src='bower_components/jquery.easing/js/jquery.easing.min.js')
 // endbower
 // endbuild
 
 // build:js scripts/main.js
 script(src="/scripts/main.js")
 // endbuild
+
+script.
+  $(window).scroll(function() {
+      if ($('.navbar').offset().top > 50) {
+          $('.navbar-fixed-top').addClass('top-nav-collapse');
+      } else {
+          $('.navbar-fixed-top').removeClass('top-nav-collapse');
+      }
+  });
