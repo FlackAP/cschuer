@@ -4,15 +4,14 @@ block content
   body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
     //
        Navigation 
-    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation' style="max-height:90px")
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
             i.fa.fa-bars
           a.navbar-brand.page-scroll(href='#page-top')
             i.fa.fa-play-circle
-            span.light C
-            | Schuer
+            span.light: img(src="images/logo2.gif" style="min-width:100px; width:20%;")
         //
            Collect the nav links, forms, and other content for toggling 
         .collapse.navbar-collapse.navbar-right.navbar-main-collapse
@@ -37,7 +36,7 @@ block content
         .container(style="margin-top:25%")
           .row
             .col-md-8.col-md-offset-2
-              h1.brand-heading CSchuer
+              img(src="/images/Logo.gif" style="width:90%")
               p.intro-text
                 | What a cool guy
               a.btn.btn-circle.page-scroll(href='#about')
