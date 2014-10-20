@@ -34,7 +34,7 @@ p {
 }
 
 a {
-  color: #219ab3;
+  color: #216A79;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -220,7 +220,7 @@ a {
   padding-top: 100px;
 }
 
-.download-section {
+.portfolio-section {
   width: 100%;
   padding: 50px 0;
   color: #fff;
@@ -242,7 +242,7 @@ a {
   .content-section {
     padding-top: 120px;
   }
-  .download-section {
+  .portfolio-section {
     padding: 100px 0;
   }
   #map {
@@ -261,14 +261,14 @@ a {
 }
 
 .btn-default {
-  border: 1px solid #219ab3;
-  color: #219ab3;
+  border: 1px solid #216A79;
+  color: #216A79;
   background-color: transparent;
   &:hover, &:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid #216A79;
     outline: 0;
     color: #000;
-    background-color: #219ab3;
+    background-color: #216A79;
   }
 }
 

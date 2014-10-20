@@ -14,7 +14,7 @@ block content
             li
               a.page-scroll(href='#about') About
             li
-              a.page-scroll(href='#portfolio') Portfolio
+              a.page-scroll(href='#portfolio') Services
             li
               a.page-scroll(href='#contact') Contact
 
@@ -41,29 +41,38 @@ block content
             |Life is good by the CSchuer.
 
     section#portfolio.content-section.text-center
-      .download-section
+      .portfolio-section
         .container
           .col-lg-8.col-lg-offset-2
-            h2 Cool Portfolio, Bro
+            h2 Services
+          .row
+            .col-md-4
+              h3 Trade Shows
+            .col-md-4
+              h3 Print & Digital Media
+            .col-md-4
+              h3 Operations Management
+
  
     section#contact.container.content-section.text-center
       .row
         .col-lg-8.col-lg-offset-2
           h2 Contact CSchuer
           p
-            | Hit me up on the low
-          p
+            a(href='tel:+18434197759') (843) 419-7759
+            br
             a(href='mailto:coreyschuerman@me.com') coreyschuerman@me.com
           ul.list-inline.banner-social-buttons
             li
-              a.btn.btn-default.btn-lg(href='https://twitter.com/')
+              a.btn.btn-default.btn-lg(href='https://twitter.com/cschuer')
                 i.fa.fa-twitter.fa-fw
                 span.network-name Twitter
             li
-              a.btn.btn-default.btn-lg(href='https://linkedin.com')
+              a.btn.btn-default.btn-lg(href='http://www.linkedin.com/in/cschuer/')
                 i.fa.fa-linkedin.fa-fw
                 span.network-name Linkedin
 
     footer
       .container.text-center
         p Copyright © CSchuer 2014
+        p(style="font-size:12px") Built and designed by <a href="http://flackap.com">Andy Flack</a>
